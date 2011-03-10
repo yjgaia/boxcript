@@ -1,0 +1,26 @@
+# Boolean 상자
+
+# 같다
+equals = {: param
+	mom.__native_value__ == param.__native_value__
+}
+
+# 다르다
+differs = {: param
+	mom.__native_value__ != param.__native_value__
+}
+
+# 현재 값의 반대
+not = {
+	!mom.__native_value__
+}
+
+# And
+and = {: param
+	mom.__native_value__ & param.__native_value__
+}
+
+# Or
+or = {: param
+	mom.__native_value__ | param.__native_value__
+}

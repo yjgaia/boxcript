@@ -1,0 +1,35 @@
+# 문자열 상자
+
+# 문자열의 길이
+length = {
+	mom.__native_value__.__size__
+}
+
+# 덧셈
+add = {: box
+	mom.__native_value__ + box.__native_value__
+}
+plus = {: box
+	mom.add: box
+}
+
+# 같다
+equals = {: box
+	mom.__native_value__ == box.__native_value__
+}
+
+# 크다
+largerThan = {: box
+	mom.__native_value__ > box.__native_value__
+}
+largerOrEqualsThan = {: box
+	mom.__native_value__ >= box.__native_value__
+}
+
+# 작다
+smallerThan = {: box
+	mom.__native_value__ < box.__native_value__
+}
+smallerOrEqualsThan = {: box
+	mom.__native_value__ <= box.__native_value__
+}

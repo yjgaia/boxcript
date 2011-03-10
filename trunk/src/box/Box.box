@@ -1,0 +1,58 @@
+# 기본 상자
+# 모든 상자는 이 상자를 상속받습니다.
+
+# 현재 상자의 위치로부터 상대 경로에 있는 파일을 A에 포함합니다.
+# A = import: "theBox.box"
+import = {: box
+	result << box
+}
+
+# 현재 상자의 위치로부터 상대 경로에 있는 파일을 현재 상자에 포함합니다. 
+# include: "theBox.box"
+include = {: box
+	mom << box
+}
+
+# 조건문
+if = {: condition, run
+	result = condition:
+	result ? run
+}
+ifElse = {: condition, run, run2
+	result = condition:
+	result ? run
+	!result ? run2
+}
+
+# 반복문
+while = {: condition, run
+	mom.if: condition, {
+		mom.run:
+		mom.mom.while: mom.condition, mom.run
+	}
+}
+doWhile = {: run, condition
+	run:
+	mom.while: condition, run
+}
+for = {: condition, run, run2
+	run2:
+	run:
+	mom.if: condition, {
+		mom.mom.for: mom.condition, mom.run, mom.run2
+	}
+}
+
+# 자바 명령어를 실행합니다.
+# java: "System.out.print(\"test\");"
+java = {: box
+	>> box
+}
+
+# 출력
+print = {: box
+	>> "System.out.print(\"" + box + "\");"
+}
+println = {: box
+	mom.print: box + "\n"
+}

@@ -1,0 +1,35 @@
+# 조건문 테스트를 수행합니다.
+# if 함수는 box/Box.box에 선언되어 있습니다.
+# ifElse 함수는 box/Box.box에 선언되어 있습니다.
+# println 함수는 box/Box.box에 선언되어 있습니다.
+
+# if 문
+number = 5
+if: {mom.number == 5}, {
+	println: mom.number
+}
+
+# ifElse 문
+boolean = true
+ifElse: {mom.boolean}, {
+	println: "참일 경우"
+}, {
+	println: "거짓일 경우"
+}
+ifElse: {!mom.boolean}, {
+	println: "참일 경우"
+}, {
+	println: "거짓일 경우"
+}
+
+# 다중 조건문
+string = "문자열"
+ifElse: {mom.string == "다른 문자열"}, {
+	println: "참일 경우"
+}, {
+	ifElse: {mom.mom.string == "문자열"}, {
+		println: "두번째 조건문에서, 참일 경우"
+	}, {
+		println: "두번째 조건문에서, 거짓일 경우"
+	}
+}

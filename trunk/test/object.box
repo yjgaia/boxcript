@@ -1,0 +1,18 @@
+# Boxcript는 모든것이 객체입니다.
+# println 함수는 box/Box.box에 선언되어 있습니다.
+
+# 숫자 객체
+result = 6.multiply: 4
+println: result
+
+# 문자열 객체
+result = "문자열".length:
+println: result
+
+# Boolean 객체
+result = false.equals: false
+println: result
+
+# 배열 객체
+result = (1, 2, 3, 4).size:
+println: result

@@ -1,0 +1,14 @@
+# 자바 코드 실행을 테스트합니다.
+# java 함수는 box/Box.box에 선언되어 있습니다.
+# println 함수는 box/Box.box에 선언되어 있습니다.
+
+# 자바 함수 실행
+java: "System.out.println(\"자바 테스트\")"
+
+# 자바로 만든 문자열을 가져옵니다.
+result = java: "new String(\"새 String 객체\")"
+println: result
+
+# 문자열을 자바 함수로 실행합니다.
+string = "Boxcript에서 만든 문자열"
+java: "System.out.println(\"" + string + "\")"
