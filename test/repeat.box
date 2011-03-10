@@ -1,0 +1,33 @@
+# 반복문 테스트를 수행합니다.
+# while 함수는 box/Box.box에 선언되어 있습니다.
+# println 함수는 box/Box.box에 선언되어 있습니다.
+
+# while 문
+number = 5
+while: {mom.number < 10}, {
+	println: mom.number
+	mom.number++
+}
+
+# doWhile 문
+number2 = 2
+doWhile: {
+	println: mom.number2
+}, {mom.number2 > 10}
+
+# for 문
+i = 0
+for: {mom.i < 10}, {mom.i++}, {
+	println: mom.i
+}
+
+# 다중 반복문
+i = 1
+for: {mom.i <= 5}, {mom.i++}, {
+	j = 1
+	for: {mom.j <= 5}, {mom.j++}, {
+		print: mom.mom.i * mom.j
+		print: " "
+	}
+	print: "\n"
+}

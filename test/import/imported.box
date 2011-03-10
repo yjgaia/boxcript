@@ -1,0 +1,11 @@
+# import 되어지는 박스
+# while 함수는 box/Box.box에 선언되어 있습니다.
+
+factorial = {: number
+	result = 1
+	while: {mom.number > 1}, {
+		mom.result *= mom.number - 1
+		mom.number--
+	}
+	result
+}

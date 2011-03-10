@@ -1,0 +1,68 @@
+# 숫자 상자
+
+# 덧셈
+plus = {: box
+	mom.__native_value__ + box.__native_value__
+}
+add = {: box
+	mom.plus: box
+}
+
+# 뺄셈
+minus = {: box
+	mom.__native_value__ - box.__native_value__
+}
+subtract = {: box
+	mom.minus: box
+}
+
+# 곱셈
+multiply = {: box
+	mom.__native_value__ * box.__native_value__
+}
+
+# 나눗셈
+divide = {: box
+	mom.__native_value__ / box.__native_value__
+}
+
+# 나머지
+remainder = {: box
+	mom.__native_value__ % box.__native_value__
+}
+
+# 증가
+increase = {
+	mom.plus: 1
+}
+
+# 감소
+decrease = {
+	mom.minus: 1
+}
+
+# 같다
+equals = {: box
+	mom.__native_value__ == box.__native_value__
+}
+
+# 다르다
+differs = {: box
+	mom.__native_value__ != box.__native_value__
+}
+
+# 크다
+largerThan = {: box
+	mom.__native_value__ > box.__native_value__
+}
+largerOrEqualsThan = {: box
+	mom.__native_value__ >= box.__native_value__
+}
+
+# 작다
+smallerThan = {: box
+	mom.__native_value__ < box.__native_value__
+}
+smallerOrEqualsThan = {: box
+	mom.__native_value__ <= box.__native_value__
+}

@@ -1,0 +1,14 @@
+# 배열 상자
+
+# 덧셈 (문자열로 더해집니다.)
+plus = {: box
+	mom.__native_value__ + box.__native_value__
+}
+add = {: box
+	mom.plus: box
+}
+
+# 배열의 크기
+size = {
+	mom.__native_value__.__size__
+}

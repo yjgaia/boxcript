@@ -1,0 +1,14 @@
+# 다른 박스를 가져오는 것을 테스트합니다.
+# import 함수는 box/Box.box에 선언되어 있습니다.
+# include 함수는 box/Box.box에 선언되어 있습니다.
+# println 함수는 box/Box.box에 선언되어 있습니다.
+
+# 현재 박스에 import/imported.box를 가져옵니다.
+include: "import/imported.box"
+result = factorial: 5
+println: result
+
+# box에 import/imported.box를 가져와 넣습니다.
+box = import: "import/imported.box"
+result = box.factorial: 7
+println: result

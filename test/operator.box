@@ -1,0 +1,20 @@
+# 연산자 테스트를 수행합니다.
+# println 함수는 box/Box.box에 선언되어 있습니다.
+
+# 연산자 정의
+object = {
+	number = 45
+	plus = {: box
+		mom.number * box
+	}
+}
+object: # 객체 생성
+result = object + 77
+println: result
+
+# 연산자 재정의
+number = 3
+number.plus = {: box
+	mom.number.__native_value__ - box.__native_value__ 
+}
+println: number + 4 # -1이 출력됩니다.

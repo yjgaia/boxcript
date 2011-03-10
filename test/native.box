@@ -1,0 +1,30 @@
+# Native 값을 다루는 박스에 대한 테스트를 실시합니다.
+# 각 자료형에 대한 연산자는 해당 box/native/자료형.box에 선언되어 있습니다.
+# println 함수는 box/Box.box에 선언되어 있습니다.
+
+# 숫자 테스트
+number = 5
+println: number
+println: number + 2
+println: number * 3 + 2
+number = number + 1
+println: number
+
+# 문자열 테스트
+string = "문자열"
+println: string
+println: string + "더해지는 문자열"
+string2 = "문자열2"
+println: string + string2
+println: string.length:
+
+# Boolean 테스트
+boolean = true
+println: boolean
+println: boolean & false
+println: boolean | false
+
+# 배열 테스트
+array = 1, 2, 3
+println: array
+println: array, 4, 5, 6

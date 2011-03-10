@@ -1,0 +1,41 @@
+# 테스트 파일입니다.
+
+a = {
+	b = 1
+	doWhile: {
+		println: "test"
+		mom.b = 1
+	}, {mom.b == 2}
+	if: {1 == 1}, {
+		println: "yes"
+	}
+	println: b
+}
+
+a:
+
+test = 1 * 2
+test -= 4
+println: test <= -2 & false
+
+println: (1, 2), (3, 4)
+asgasdg = (1, 2)
+println: asgasdg[1]
+
+println: "ㅁ" <= "ㅁ"
+
+include: "test2.box"
+
+eee, zzz = func: 1, 2
+println: eee
+
+java: "System.out.print(\"test\");"
+
+i = 0
+for: {mom.i <= 10}, {mom.i++}, {
+	println: mom.i
+}
+
+include: "box/한글.box"
+
+println: 참
