@@ -2,7 +2,8 @@
 
 Boxcript는 Mr. 하늘이 스크립트 언어가 어떻게 개발되는지 궁금해 만든 간단한 OOP 프로그래밍 언어입니다.
 
-상세 정보: 
+* 이 프로젝트는 Google Code에서 이전되었습니다.
+* Boxcript 소개 - http://blog.mr.hanul.co/2011/03/boxcript.html
 
 Commiter
 ----
